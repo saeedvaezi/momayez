@@ -1,12 +1,68 @@
 ﻿#include "Momayez.h"
 
-
-long long int Momayez::made131(long long int mablagh,long long int moafiat
-	, int mabna ,int nahveh ,int asnaf ,int takhfif) 
+long long int Momayez::made131(long long int mablagh, long long int moafiat
+	, int mabna, int nahveh, int asnaf, int takhfif)
 {
+	if (mabna == 0)//بر مبنای درآمد
+	{
+		if (nahveh == 0)//قانون قدیم
+		{
+			if (asnaf == 1)//با حق اصناف
+			{
+				long long int asnafprice = asnaf131(mablagh);
+				long long int daramad = mablagh - moafiat - asnafprice;
 
+				return maliat131old(daramad) + asnafprice;
+			}
+			else if (asnaf == 0)//بدون حق اصناف
+			{
+				long long int daramad = mablagh - moafiat;
 
-	return 0;
+				return maliat131old(daramad);
+			}
+		}
+		else if (nahveh == 1)//قانون جدید
+		{
+			if (asnaf == 1)//با حق اصناف
+			{
+				long long int asnafprice = asnaf131(mablagh);
+				long long int daramad = mablagh - moafiat - asnafprice;
+
+				return maliat131new(daramad, takhfif) + asnafprice;
+			}
+			else if (asnaf == 0)//بدون حق اصناف
+			{
+				long long int daramad = mablagh - moafiat;
+
+				return maliat131new(daramad, takhfif);
+			}
+		}
+	}
+	else if (mabna == 1)//بر مبنای مالیات
+	{
+		if (nahveh == 0)//قانون قدیم
+		{
+			if (asnaf == 1)//با حق اصناف
+			{
+				return daramad131old(mablagh) + moafiat + asnaf131(mablagh);
+			}
+			else if (asnaf == 0)//بدون حق اصناف
+			{
+				return daramad131old(mablagh) + moafiat;
+			}
+		}
+		else if (nahveh == 1)//قانون جدید
+		{
+			if (asnaf == 1)//با حق اصناف
+			{
+				return daramad131new(mablagh, takhfif) + moafiat + asnaf131(daramad131new(mablagh, takhfif));
+			}
+			else if (asnaf == 0)//بدون حق اصناف
+			{
+				return daramad131new(mablagh, takhfif) + moafiat;
+			}
+		}
+	}
 }
 
 //محاسبه حق اصناف
