@@ -118,8 +118,18 @@ private:
 	long long int daramad131old(
 		long long int //مالیات سالیانه
 		);
+
+//**************************************************************
+	long long int daramad131oldAsnaf(
+		long long int //مالیات با اصناف
+		);
 //**************************************************************
 	long long int daramad131new(
+		long long int //مالیات سالیانه
+		, int //درصد تخفیف
+		);
+//**************************************************************
+	long long int daramad131newAsnaf(
 		long long int //مالیات سالیانه
 		, int //درصد تخفیف
 		);
