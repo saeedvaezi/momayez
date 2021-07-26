@@ -1,23 +1,52 @@
-class Momayez
+﻿class Momayez
 {
 public:
 //**************************************************************
+//معافیت مشاغل سال 90
+const long long int moafiatm90=58200000;
+//معافیت مشاغل سال 91
+const long long int moafiatm91=66000000;
+//معافیت مشاغل سال 92
+const long long int moafiatm92=100000000;
+//معافیت مشاغل سال 93
+const long long int moafiatm93=120000000;
+//معافیت مشاغل سال 94
+const long long int moafiatm94=138000000;
+//معافیت مشاغل سال 95
+const long long int moafiatm95=156000000;
+//معافیت مشاغل سال 96
+const long long int moafiatm96=180000000;
+//معافیت مشاغل سال 97
+const long long int moafiatm97=216000000;
+//معافیت مشاغل سال 98
+const long long int moafiatm98=258000000;
+//معافیت مشاغل سال 99
+const long long int moafiatm99=288000000;
+//معافیت مشاغل سال 1400
+const long long int moafiatm1400=360000000;
+//**************************************************************
 //معافیت حقوق سال 90
-const long long int moafiat90=58200000;
+const long long int moafiath90=58200000;
 //معافیت حقوق سال 91
-const long long int moafiat91=66000000;
+const long long int moafiath91=66000000;
 //معافیت حقوق سال 92
-const long long int moafiat92=100000000;
+const long long int moafiath92=100000000;
 //معافیت حقوق سال 93
-const long long int moafiat93=120000000;
+const long long int moafiath93=120000000;
 //معافیت حقوق سال 94
-const long long int moafiat94=138000000;
+const long long int moafiath94=138000000;
 //معافیت حقوق سال 95
-const long long int moafiat95=156000000;
+const long long int moafiath95=156000000;
 //معافیت حقوق سال 96
-const long long int moafiat96=240000000;
+const long long int moafiath96=240000000;
 //معافیت حقوق سال 97
-const long long int moafiat97=276000000;
+const long long int moafiath97=276000000;
+//معافیت حقوق سال 98
+const long long int moafiath98=330000000;
+//معافیت حقوق سال 99
+const long long int moafiath99=360000000;
+//معافیت حقوق سال 1400
+const long long int moafiath1400=480000000;
 //**************************************************************
 //ضریب ارزش افزوده سال 87
 const double zaribeVat87 = 0.03; //maliat=1.5%  avarez=1.5%
@@ -63,6 +92,18 @@ const double zaribeAvarezVat96=0.03;//avarez=3%
 const double zaribeVat97=0.09;//maliat=6%  avarez=3%
 const double zaribeMaliatVat97=0.06;//maliat=6%
 const double zaribeAvarezVat97=0.03;//avarez=3%
+//ضیب ارزش افزوده سال 98
+const double zaribeVat98=0.09;//maliat=6%  avarez=3%
+const double zaribeMaliatVat98=0.06;//maliat=6%
+const double zaribeAvarezVat98=0.03;//avarez=3%
+//ضریب ارزش افزوده سال 99
+const double zaribeVat99=0.09;//maliat=6%  avarez=3%
+const double zaribeMaliatVat99=0.06;//maliat=6%
+const double zaribeAvarezVat99=0.03;//avarez=3%
+//ضریب ارزش افزوده سال 1400
+const double zaribeVat1400=0.09;//maliat=6%  avarez=3%
+const double zaribeMaliatVat1400=0.06;//maliat=6%
+const double zaribeAvarezVat1400=0.03;//avarez=3%
 //**************************************************************
 //سقف های طبقه اول ماده 131 قدیم
 const long long int oldlevel1=30000000;
