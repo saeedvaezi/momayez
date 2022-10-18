@@ -24,6 +24,8 @@ const long long int moafiatm98=258000000;
 const long long int moafiatm99=288000000;
 //معافیت مشاغل سال 1400
 const long long int moafiatm1400=360000000;
+//معافیت مشاغل سال 1401
+const long long int moafiatm1401=396000000;
 //**************************************************************
 //معافیت حقوق سال 90
 const long long int moafiath90=58200000;
@@ -47,6 +49,8 @@ const long long int moafiath98=330000000;
 const long long int moafiath99=360000000;
 //معافیت حقوق سال 1400
 const long long int moafiath1400=480000000;
+//معافیت حقوق سال 1401
+const long long int moafiath1401=672000000;
 //**************************************************************
 //ضریب ارزش افزوده سال 87
 const double zaribeVat87 = 0.03; //maliat=1.5%  avarez=1.5%
@@ -104,6 +108,10 @@ const double zaribeAvarezVat99=0.03;//avarez=3%
 const double zaribeVat1400=0.09;//maliat=6%  avarez=3%
 const double zaribeMaliatVat1400=0.06;//maliat=6%
 const double zaribeAvarezVat1400=0.03;//avarez=3%
+//ضریب ارزش افزوده سال 1401
+const double zaribeVat1401=0.09;//maliat=6%  avarez=3%
+const double zaribeMaliatVat1401=0.06;//maliat=6%
+const double zaribeAvarezVat1401=0.03;//avarez=3%
 //**************************************************************
 //سقف های طبقه اول ماده 131 قدیم
 const long long int oldlevel1=30000000;
@@ -136,13 +144,17 @@ const double zaribnewlevel1 = 0.15;
 const double zaribnewlevel2 = 0.20;
 //ضریب ماده 131 جدید تا مبلغ - طبقه سوم
 const double zaribnewlevel3 = 0.25;
-
+//**************************************************************
+//سقف های طبقه اول ماده 131 سال 1401
+const long long int new1401level1=2000000000;
+//سقف های طبقه دوم ماده 131 سال 1401
+const long long int new1401level2=4000000000;
 //************************************************************محاسبه ماده 131
 	long long int made131( 
 		long long int //درآمد یا مالیات سالیانه
 		, long long int //معافیت سالیانه
 		, int //مبنای محاسبه 0 درآمد 1 مالیات
-		, int //نحوه محاسبه 0 قانون قدیم 1 قانون جدید
+		, int //نحوه محاسبه 0 قانون قدیم 1 قانون جدید 2 قانون 1401
 		, int //محاسبه سهم اصناف 0 خیر 1 بله
 		, int //درصد تخفیف
 		);
@@ -175,6 +187,16 @@ private:
 		, int //درصد تخفیف
 		);
 //**************************************************************
+	long long int daramad1311401(
+		long long int //مالیات سالیانه
+		, int //درصد تخفیف
+		);
+//**************************************************************
+	long long int daramad1311401Asnaf(
+		long long int //مالیات سالیانه
+		, int //درصد تخفیف
+		);
+//**************************************************************
 	long long int maliat131old(
 		long long int //درآمد سالیانه
 		);
@@ -184,5 +206,22 @@ private:
 		, int //درصد تخفیف
 		);
 //**************************************************************
+	long long int maliat1311401(
+		long long int //درآمد سالیانه
+		, int //درصد تخفیف
+		);
+//**************************************************************
+	long long int tambr(//حق تمبر وکیل
+		long long int //مبلغ مالیات
+		);
+//**************************************************************
+	long long int maliateidi1401(//مالیات عیدی سال 1401
+		long long int //عیدی سال 1401
+		,long long int //جمع حقوق سال 1401
+		);
 
+	long long int maliathoghoogh1401(//مالیات حقوق سال 1401
+		long long int //جمع حقوق سال 1401
+		);
+	
 };
