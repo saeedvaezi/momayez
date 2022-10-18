@@ -109,9 +109,7 @@ const double zaribeVat1400=0.09;//maliat=6%  avarez=3%
 const double zaribeMaliatVat1400=0.06;//maliat=6%
 const double zaribeAvarezVat1400=0.03;//avarez=3%
 //ضریب ارزش افزوده سال 1401
-const double zaribeVat1401=0.09;//maliat=6%  avarez=3%
-const double zaribeMaliatVat1401=0.06;//maliat=6%
-const double zaribeAvarezVat1401=0.03;//avarez=3%
+const double zaribeVat1401=0.09;
 //**************************************************************
 //سقف های طبقه اول ماده 131 قدیم
 const long long int oldlevel1=30000000;
