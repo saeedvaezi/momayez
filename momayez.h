@@ -26,6 +26,8 @@ const long long int moafiatm99=288000000;
 const long long int moafiatm1400=360000000;
 //معافیت مشاغل سال 1401
 const long long int moafiatm1401=396000000;
+//معافیت مشاغل سال 1402
+const long long int moafiatm1402=475000000;
 //**************************************************************
 //معافیت حقوق سال 90
 const long long int moafiath90=58200000;
@@ -51,6 +53,8 @@ const long long int moafiath99=360000000;
 const long long int moafiath1400=480000000;
 //معافیت حقوق سال 1401
 const long long int moafiath1401=672000000;
+//معافیت حقوق سال 1402
+const long long int moafiath1402=1200000000;
 //**************************************************************
 //ضریب ارزش افزوده سال 87
 const double zaribeVat87 = 0.03; //maliat=1.5%  avarez=1.5%
